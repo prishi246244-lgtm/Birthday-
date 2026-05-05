@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Happy Birthday champion  ❤️</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial;
+      text-align: center;
+      background: #ffe6f0;
+    }
+
+    /* First screen */
+    .hero {
+      padding: 60px 20px;
+    }
+
+    h1 {
+      color: #ff4d6d;
+      font-size: 40px;
+    }
+
+    .para {
+      max-width: 600px;
+      margin: auto;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    /* Hidden section */
+    .menu {
+      opacity: 0;
+      transform: translateY(50px);
+      transition: all 1s ease;
+      padding: 50px;
+    }
+
+    .menu.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .btn {
+      display: block;
+      margin: 15px auto;
+      padding: 15px;
+      width: 220px;
+      background: #ff4d6d;
+      color: white;
+      border-radius: 10px;
+      text-decoration: none;
+      font-size: 18px;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="hero">
+  <h1>Happy Birthday champion ❤️</h1>
+
+  <p class="para">
+    happiest birthday betu.....mahadev bless uh, with alots of success, love nd proseprity . humesha haste muskurate rahiye, forever wala happy rahiye .....i don't know how to make ur day special ....but jitna ho skta mei  jaroor krungi . keep smiling champ . we all love uh nd so much proud of uh. this is one of the happiest day of my life, nd remember this girl is always going to be on ur side . rest aaj ka din ache se enjoy kriye, nd achi achi pics click kijiye ..... have a bestest day of ur life :> 
+  </p>
+</div>
+
+
+<div id="menu" class="menu">
+  <a href="photos.html" class="btn">Photos 📸</a>
+  <a href="videos.html" class="btn">Videos 🎥</a>
+  <a href="voice.html" class="btn">Voice Note 🎙️</a>
+  <a href="playlist.html" class="btn">Playlist 🎧</a>
+</div>
+
+<script>
+  
+  window.addEventListener("scroll", function() {
+    let menu = document.getElementById("menu");
+    let position = menu.getBoundingClientRect().top;
+    let screenHeight = window.innerHeight;
+
+    if (position < screenHeight - 100) {
+      menu.classList.add("show");
+    }
+  });
+</script>
+
+</body>
+</html>
