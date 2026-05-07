@@ -30,16 +30,10 @@
 
     /* Hidden section */
     .menu {
-      opacity: 0;
-      transform: translateY(50px);
-      transition: all 1s ease;
       padding: 50px;
     }
 
-    .menu.show {
-      opacity: 1;
-      transform: translateY(0);
-    }
+    
 
     .btn {
       display: block;
@@ -73,18 +67,6 @@
   <a href="playlist.html" class="btn">Playlist 🎧</a>
 </div>
 
-<script>
-  
-  window.addEventListener("scroll", function() {
-    let menu = document.getElementById("menu");
-    let position = menu.getBoundingClientRect().top;
-    let screenHeight = window.innerHeight;
-
-    if (position < screenHeight - 100) {
-      menu.classList.add("show");
-    }
-  });
-</script>
 
 </body>
 </html>
